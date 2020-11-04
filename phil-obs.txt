@@ -1,0 +1,10 @@
+phil-rightfirst:
+
+In this method for synchronization it is inevitable that we encounter a deadlock. When all the philosophers attempt to grab a right fork first they will all only be holding one fork. There is the rare scenario where one philosopher is able to get their right fork and then get their left fork before the philosopher to theirs. This is a very poor solution to the problem because often we encounter deadlocks.
+
+phil-ordered:
+
+Phil ordered is essentially the same strategy as phil-rightfirst except its left first. The getting by lowest number will always result in a philosopher getting the left fork.
+
+Phil-random:
+This strategy is the best so far but it still easily encounters deadlock. The random order of grabbing forks will sometimes allow a philosopher to eat but it is completely up to chance who if anyone is able to eat. To improve this strategy I would put a conflict resolution strategy where if 2 philosophers need each others fork they should put one down or one takes both.  
